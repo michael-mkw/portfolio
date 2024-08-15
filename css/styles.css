@@ -618,6 +618,9 @@ progress {
   border-radius: 0.375rem;
   max-width: 80%;
   height: auto;
+  display: block; /* Makes the image a block-level element */
+  margin-left: auto; /* Automatically calculates the left margin */
+  margin-right: auto; /* Automatically calculates the right margin */
 }
 
 .figure {
