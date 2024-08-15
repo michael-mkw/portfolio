@@ -623,6 +623,33 @@ progress {
   margin-right: auto; /* Automatically calculates the right margin */
 }
 
+.img-thumbnail60 {
+  background-color: #fff;
+  max-width: 60%;
+  height: auto;
+  display: block; /* Makes the image a block-level element */
+  margin-left: auto; /* Automatically calculates the left margin */
+  margin-right: auto; /* Automatically calculates the right margin */
+}
+
+.img-thumbnail50 {
+  background-color: #fff;
+  max-width: 50%;
+  height: auto;
+  display: block; /* Makes the image a block-level element */
+  margin-left: auto; /* Automatically calculates the left margin */
+  margin-right: auto; /* Automatically calculates the right margin */
+}
+
+.img-thumbnail40 {
+  background-color: #fff;
+  max-width: 40%;
+  height: auto;
+  display: block; /* Makes the image a block-level element */
+  margin-left: auto; /* Automatically calculates the left margin */
+  margin-right: auto; /* Automatically calculates the right margin */
+}
+
 .figure {
   display: inline-block;
 }
@@ -902,6 +929,12 @@ progress {
 .g-5,
 .gy-5 {
   --bs-gutter-y: 3rem;
+}
+
+.g-5,
+.gx-5center{
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 576px) {
