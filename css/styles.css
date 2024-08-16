@@ -935,6 +935,9 @@ progress {
 .gx-5center{
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap; /* Prevents wrapping onto the next line */
+  overflow-x: auto;  /* Adds horizontal scrolling if needed */
+  max-width: 100%;   /* Ensures the container doesn't exceed viewport width */
 }
 
 @media (min-width: 576px) {
