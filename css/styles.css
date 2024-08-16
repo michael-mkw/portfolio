@@ -650,6 +650,32 @@ progress {
   margin-right: auto; /* Automatically calculates the right margin */
 }
 
+@media (max-width: 576px) {
+  .img-thumbnail50 {
+    max-width: 100%; /* Adjusts to 100% width for screens 576px and smaller */
+  }
+}
+@media (max-width: 768px) {
+  .img-thumbnail50 {
+    max-width: 100%; /* Adjusts to 80% width for screens 768px and smaller */
+  }
+}
+@media (max-width: 992px) {
+  .img-thumbnail50 {
+    max-width: 80%; /* Adjusts to 80% width for screens 768px and smaller */
+  }
+}
+@media (max-width: 1200px) {
+  .img-thumbnail50 {
+    max-width: 80%; /* Adjusts to 80% width for screens 768px and smaller */
+  }
+}
+@media (max-width: 1400px) {
+  .img-thumbnail50 {
+    max-width: 80%; /* Adjusts to 80% width for screens 768px and smaller */
+  }
+}
+
 .figure {
   display: inline-block;
 }
