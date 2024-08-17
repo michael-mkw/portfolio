@@ -491,6 +491,38 @@ progress {
   font-weight: 300;
 }
 
+.lead70 {
+  font-size: 1.15rem;
+  font-weight: 300;
+  margin: 0 auto;  /* Centers the text within its container */
+}
+
+@media (min-width: 576px) {
+  .lead70 {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .lead70 {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .lead70 {
+    max-width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .lead70 {
+    max-width: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  .lead70 {
+    max-width: 70%;
+  }
+}
+
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
