@@ -163,6 +163,10 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+.normal-text {
+  font-style: normal;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -606,6 +610,25 @@ progress {
   margin-right: 0.5rem;
 }
 
+.list-arrow {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-arrow li {
+  position: relative;    /* Allows positioning of the custom bullet */
+  padding-left: 1.5em;   /* Space to the left of the text for the icon */
+}
+
+.list-arrow li::before {
+  font-family: "bootstrap-icons";
+  content: "\F285";      /* Unicode for the 'Chevron right' icon */
+  position: absolute;    /* Position the icon */
+  left: 0;               /* Align it to the left of the list item */
+  top: 0.225em;          /* Adjust the vertical alignment of the icon */
+  font-size: 0.8em;      /* Size of the icon */
+}
+
 .initialism {
   font-size: 0.875em;
   text-transform: uppercase;
@@ -689,7 +712,7 @@ progress {
 }
 @media (max-width: 768px) {
   .img-thumbnail50 {
-    max-width: 100%; /* Adjusts to 80% width for screens 768px and smaller */
+    max-width: 85%; /* Adjusts to 85% width for screens 768px and smaller */
   }
 }
 @media (max-width: 992px) {
