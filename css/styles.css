@@ -4375,6 +4375,12 @@ textarea.form-control-lg {
   height: auto;
 }
 
+.card-body-embedmap {
+  padding: 0;
+  margin: 0;
+  color: var(--bs-card-color);
+}
+
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
 }
@@ -11008,4 +11014,65 @@ textarea.form-control-lg {
   border-radius: 50%; /* Make the image circular */
   object-fit: cover; /* Ensure the image covers the entire area */
 }
+
+:root {
+  --bs-bg-opacity: 1;
+  --bg-light-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.embed-container-light {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  width: 100%;
+  max-width: 100%;
+  border: 3px solid var(--bg-light-color); /* Use the background color for the border */
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0 2px black; /* Black line surrounding the border */
+}
+
+/* Ensure iframe fills container */
+.embed-container-light iframe, 
+.embed-container-light object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media query adjustments */
+@media (max-width: 575.98px) {
+  .embed-container-light {
+    padding-bottom: 140%; /* Aspect ratio for small screens */
+    border: 1px solid var(--bg-light-color); /* Adjust for smaller screens */
+    box-shadow: 0 0 0 1px grey; /* Smaller black line effect for small screens */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .embed-container-light {
+    padding-bottom: 100%; /* Aspect ratio for tablets */
+    border: 2px solid var(--bg-light-color); /* Adjust for tablets */
+    box-shadow: 0 0 0 1px grey; /* Medium black line effect for tablets */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .embed-container-light {
+    padding-bottom: 75%; /* Aspect ratio for laptops */
+    border: 3px solid var(--bg-light-color); /* Adjust for laptops */
+    box-shadow: 0 0 0 1px grey; /* Medium black line effect for laptops */
+  }
+}
+
+@media (min-width: 992px) {
+  .embed-container-light {
+    padding-bottom: 60%; /* Aspect ratio for desktops */
+    border: 3px solid var(--bg-light-color); /* Adjust for desktops */
+    box-shadow: 0 0 0 1px grey; /* Larger black line effect for desktops */
+  }
+}
+
+
 
