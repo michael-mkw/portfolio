@@ -501,6 +501,12 @@ progress {
   margin: 0 auto;  /* Centers the text within its container */
 }
 
+.caption {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
 @media (min-width: 576px) {
   .lead70 {
     max-width: 100%;
@@ -11029,6 +11035,7 @@ textarea.form-control-lg {
   border: 3px solid var(--bg-light-color); /* Use the background color for the border */
   border-radius: 0.2rem;
   box-shadow: 0 0 0 2px black; /* Black line surrounding the border */
+  text-align: center; /* Only affects the .embed-container-light parent container */
 }
 
 /* Ensure iframe fills container */
@@ -11044,6 +11051,7 @@ textarea.form-control-lg {
 /* Media query adjustments */
 @media (max-width: 575.98px) {
   .embed-container-light {
+    width: 100%;
     padding-bottom: 140%; /* Aspect ratio for small screens */
     border: 1px solid var(--bg-light-color); /* Adjust for smaller screens */
     box-shadow: 0 0 0 1px grey; /* Smaller black line effect for small screens */
@@ -11052,6 +11060,7 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .embed-container-light {
+    width: 100%;
     padding-bottom: 100%; /* Aspect ratio for tablets */
     border: 2px solid var(--bg-light-color); /* Adjust for tablets */
     box-shadow: 0 0 0 1px grey; /* Medium black line effect for tablets */
@@ -11060,7 +11069,8 @@ textarea.form-control-lg {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .embed-container-light {
-    padding-bottom: 75%; /* Aspect ratio for laptops */
+    width: 100%;
+    padding-bottom: 60%; /* Aspect ratio for laptops */
     border: 3px solid var(--bg-light-color); /* Adjust for laptops */
     box-shadow: 0 0 0 1px grey; /* Medium black line effect for laptops */
   }
@@ -11068,9 +11078,11 @@ textarea.form-control-lg {
 
 @media (min-width: 992px) {
   .embed-container-light {
-    padding-bottom: 60%; /* Aspect ratio for desktops */
+    width: 70%;
+    padding-bottom: 45%; /* Aspect ratio for desktops */
     border: 3px solid var(--bg-light-color); /* Adjust for desktops */
     box-shadow: 0 0 0 1px grey; /* Larger black line effect for desktops */
+    margin: 0 auto; /* Center the container horizontally */
   }
 }
 
