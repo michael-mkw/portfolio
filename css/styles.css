@@ -797,30 +797,35 @@ progress {
 /* Media queries to adjust the image width for different screen sizes */
 @media (max-width: 576px) {
   .img-experience {
+    height: auto;
     max-width: 100%; /* Adjusts to 100% width for screens 576px and smaller */
   }
 }
 
 @media (max-width: 768px) {
   .img-experience {
-    max-width: 100%; /* Adjusts to 85% width for screens 768px and smaller */
+    height: auto;
+    max-width: 100%; /* Adjusts to 100% width for screens 768px and smaller */
   }
 }
 
 @media (max-width: 992px) {
   .img-experience {
-    max-width: 100%; /* Adjusts to 80% width for screens 992px and smaller */
+    height: auto;
+    max-width: 100%; /* Adjusts to 100% width for screens 992px and smaller */
   }
 }
 
 @media (max-width: 1200px) {
   .img-experience {
+    height: auto;
     max-width: 75%; /* Adjusts to 75% width for screens 1200px and smaller */
   }
 }
 
 @media (max-width: 1400px) {
   .img-experience {
+    height: auto;
     max-width: 75%; /* Adjusts to 75% width for screens 1400px and smaller */
   }
 }
